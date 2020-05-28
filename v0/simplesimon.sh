@@ -68,7 +68,7 @@ for tname in "${!results[@]}"; do
     echo "Extracting failure for workflow ${w} [${tname}]."
     workflow-api-client -u $wf -w $w logs 2>/dev/null | \
         jq -r .[0].logs > ${tname}.failure
-    if [ -z "${failed}"]; then
+    if [ -z "${failed}" ]; then
         failed="${tname}"
     else
         failed="${failed} ${tname}"
