@@ -21,7 +21,7 @@ run="run_${img}_wf.sh"
 echo "Executing ${run}."
 ./${run} 2>/dev/null
 # Initialize the workflow map and results hashes
-for i in *{img}*.log; do
+for i in *${img}*.log; do
     tname=$(basename $i .log)
     w=$(cat $i | jq -r .name)
     wfmap[$tname]="${w}"
