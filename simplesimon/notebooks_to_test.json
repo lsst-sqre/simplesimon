@@ -1,0 +1,86 @@
+{
+    "cat_access": {
+        "name": "cat_access",
+        "path": "LSST%20Catalog%20Access%20Tutorial",
+        "timeout": "120",
+        "size": "medium"
+    },
+    "cluster": {
+        "name": "cluster",
+        "path": "cluster",
+        "timeout": "30",
+        "size": "medium"
+    },
+    "firefly": {
+        "name": "firefly",
+        "path": "Firefly",
+        "timeout": "300",
+        "size": "medium"
+    },
+    "sg": {
+        "name": "sg",
+        "path": "star_galaxy",
+        "timeout": "30",
+        "size": "medium"
+    },
+    "soda": {
+        "name": "soda",
+        "path": "LSST%20SODA%20Tutorial",
+        "timeout": "30",
+        "size": "medium"
+    },
+    "token": {
+        "name": "token",
+        "path": "token-info",
+        "timeout": "30",
+        "size": "medium"
+    },
+    "tutorial": {
+        "name": "tutorial",
+        "path": "2017_tutorial",
+        "timeout": "1800",
+        "size": "large"
+    },
+    "efd_access": {
+        "name": "efd_access",
+        "path": "efd_examples/Accessing_EFD_data",
+        "timeout": "120",
+        "size": "medium"
+    },
+    "correlate_telemetry": {
+        "name": "correlate_telemetry",
+        "path": "efd_examples/Correlate%20Exposure%20and%20telemetry",
+        "timeout": "120",
+        "size": "medium"
+    },
+    "efd_latency": {
+        "name": "efd_latency",
+        "path": "efd_examples/EFD_latency_characterization",
+        "timeout": "120",
+        "size": "medium"
+    },
+    "hich_cadence": {
+        "name": "hich_cadence",
+        "path": "efd_examples/High_cadence_EFD_data",
+        "timeout": "120",
+        "size": "medium"
+    },
+    "wise_cc": {
+        "name": "wise_cc",
+        "path": "wise_color_color",
+        "timeout": "120",
+        "size": "medium"
+    },
+    "gaia_rv": {
+        "name": "gaia_rv",
+        "path": "experiments/DASK-notebooks/rv_gaia",
+        "timeout": "1800",
+        "size": "large"
+    },
+    "gaia_all_sky": {
+        "name": "gaia_all_sky",
+        "path": "experiments/DASK-notebooks/gaia_all_sky",
+        "timeout": "1800",
+        "size": "large"
+    }
+}
