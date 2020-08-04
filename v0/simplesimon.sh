@@ -28,6 +28,7 @@ for i in *${img}*.log; do
     results[$tname]="unknown"
 done
 # Loop until we have results from each of our workflows
+total=0
 while : ; do
     waitfor=""
     for tname in "${!wfmap[@]}"; do
@@ -55,8 +56,9 @@ while : ; do
     if [ -z "${waitfor}" ]; then
     break # If we have nothing left to wait for, exit the while loop
     fi
-    echo "Waiting ${delay}s for [${waitfor}]."
+    echo "Waiting ${delay}s for [${waitfor}]. (${total}s)"
     sleep ${delay}
+    $((total = total + delay))
 done
 # All our workflows have now completed.  Assemble the status.
 succeeded=""
